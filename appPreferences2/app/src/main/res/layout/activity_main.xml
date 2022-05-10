@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/txtIsim"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="İsim"/>
+
+    <EditText
+        android:id="@+id/txtSoyisim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Soyisim"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/txtYas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Yas"
+        android:gravity="center"/>
+
+    <Button
+        android:text="Kaydet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnKaydet" />
+
+    <Button
+        android:text="Verileri Görüntüle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOku" />
+
+
+</LinearLayout>
