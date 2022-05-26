@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="@dimen/generalLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/ic_kirala_con" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giriş Yap"
+        android:gravity="center"
+        android:textSize="@dimen/title"
+        android:textStyle="bold"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtInputEposta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/txtInputLayoutMarginTop"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEpostaDogrulama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-Posta"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtInputParola"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_marginTop="@dimen/txtInputLayoutMarginTop"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtParola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Parola"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGirisYap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giriş Yap"
+            android:layout_weight="0.3"
+            android:layout_marginRight="@dimen/marginInnerSmallButton"
+            android:layout_marginLeft="@dimen/marginOuterSmallButton"
+
+            app:cornerRadius="@dimen/buttonRadius" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDogrulama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:layout_marginLeft="@dimen/marginInnerSmallButton"
+            android:layout_marginRight="@dimen/marginOuterSmallButton"
+            android:text="Kayıt Ol"
+            app:cornerRadius="@dimen/buttonRadius" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtSifremiUnuttum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Şifremi unuttum"
+        android:clickable="true"
+        android:layout_marginLeft="@dimen/marginOuterSmallButton"
+        android:textSize="@dimen/sifremiUnuttumSize"
+        />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title">40sp</dimen>
+    <dimen name="sifremiUnuttumSize">16sp</dimen>
+    <dimen name="marginOuterSmallButton">5dp</dimen>
+    <dimen name="marginInnerSmallButton">10dp</dimen>
+    <dimen name="buttonRadius">5dp</dimen>
+    <dimen name="txtInputLayoutMarginTop">10dp</dimen>
+    <dimen name="generalLayout">20dp</dimen>
+    <dimen name="kayitTitle">25sp</dimen>
+    <dimen name="kategoriBaslik">25sp</dimen>
+    <dimen name="kategoriAciklama">15sp</dimen>
+
+
+
+
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SifremiUnuttumActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/generalLayout">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Şifremi Unuttum"
+        android:gravity="center"
+        android:textSize="@dimen/title"
+        android:textStyle="bold"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtInputEposta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/txtInputLayoutMarginTop"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEpostaDogrulama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-Posta"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDogrulama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Doğrulama E-Postası Gönder"
+        app:cornerRadius="@dimen/buttonRadius" />
+
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KiralaApp">
+        
+        <provider
+            android:authorities="${applicationId}.provider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths">
+
+            </meta-data>
+        </provider>
+        
+        <activity
+            android:name=".OnaylaReddetActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".OnayBekleyenUrunler"
+            android:exported="false" />
+        <activity
+            android:name=".KiraladigimUrunlerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IlanlarimIcerik"
+            android:exported="false" />
+        <activity
+            android:name=".IlanlarimActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IcerikActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BilgilerimiGuncelleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IlanEkleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ilanlar"
+            android:exported="false" />
+        <activity
+            android:name=".SifremiUnuttumActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KayitOlActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AnaEkranActivity"
+            android:exported="false"
+            android:theme="@style/SplashScreen"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

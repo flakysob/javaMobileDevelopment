@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "324512301477",
+    "project_id": "kiralaapp-mobile81",
+    "storage_bucket": "kiralaapp-mobile81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:324512301477:android:f7ae0b368eec536e26684c",
+        "android_client_info": {
+          "package_name": "com.flakysob.kiralaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "324512301477-uhju4qh631jur2bt6m3olhqcibtifl3j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHonMh3cyqtts6uISl4vdMdZVJfWI-IbI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "324512301477-uhju4qh631jur2bt6m3olhqcibtifl3j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
